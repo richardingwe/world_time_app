@@ -11,7 +11,9 @@ class Home extends StatelessWidget {
         children: <Widget>[
           // ignore: deprecated_member_use
           FlatButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/location');
+              },
               icon: Icon(Icons.edit_location),
               label: Text('Edit Location')),
         ],
