@@ -6,7 +6,16 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Text('home')),
+      body: SafeArea(
+          child: Column(
+        children: <Widget>[
+          // ignore: deprecated_member_use
+          FlatButton.icon(
+              onPressed: () {},
+              icon: Icon(Icons.edit_location),
+              label: Text('Edit Location')),
+        ],
+      )),
     );
   }
 }
